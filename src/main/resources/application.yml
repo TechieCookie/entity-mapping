@@ -1,0 +1,20 @@
+# Application Configuration
+
+server:
+  port: 9090
+
+spring:
+  application:
+    name: ENTITY-MAPPING-APPLICATION
+
+  # Database Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/entity_demo_app
+    username: root
+    password: admin
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
